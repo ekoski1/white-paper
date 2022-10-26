@@ -1,0 +1,86 @@
+---
+title: "Who drives New York's electric vehicles?"
+author: 
+- Eric Koski, Orebed Analytics LLC
+date: "`r format(Sys.time(), '%B %d, %Y')`[^0]"
+output:
+  rmdformats::readthedown:   
+    # https://github.com/juba/rmdformats
+    number_sections: no
+    toc: 2
+  bookdown::html_document2:
+    df_print: paged
+    theme: spacelab
+    css:
+    number_sections: no
+    toc: no
+    includes:
+      in_header: 
+      before_body: 
+      after_body: 
+  bookdown::pdf_document2: 
+    highlight: tango
+    latex_engine: lualatex   # xelatex or lualatex
+    keep_tex: yes
+    keep_md: yes
+    toc: no
+    number_sections: no
+    citation_package: biblatex      # natbib not tested
+    extra_dependencies: 
+      flafter: null
+      csquotes: null
+    includes:
+      in_header: preamble.tex
+      before_body: before_body.tex
+      after_body: 
+mainfont: texgyrepagella-regular.otf
+mainfontoptions: "BoldFont=texgyrepagella-bold.otf,
+  ItalicFont=texgyrepagella-italic.otf,
+  BoldItalicFont=texgyrepagella-bolditalic.otf"
+mathfont: texgyrepagella-math.otf
+sansfont: zhv.otf                 # Helvetica
+monofont: inconsolata.otf
+# colorlinks: specify in before_body.tex
+colorlinks: true
+papersize: letter
+geometry: margin=2.54cm   # change if A4
+lang: en-US
+fontsize: 10pt
+bibliography: "white-paper.bib"
+biblio-style: alphabetic  # choices include ieee, acm, apa, mls, alphabetic, authoryear, etc.
+keywords: this, that
+abstract: "This is the abstract."
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval = TRUE)
+
+docType <- "informal report"
+```
+
+```{r setup, include=FALSE, message=FALSE}
+source("setup.R")
+
+# \blfootnote{\textbf{Current version:} `r format(Sys.time(), '%B %d, %Y')`; \textbf{commit:} `r gitStatusBrief`}
+```
+
+[^0]: **Current version:** `r format(Sys.time(), '%B %d, %Y')`; **commit:** `r gitStatusBrief`
+
+```{r more_setup, include=FALSE}
+
+source("utils.R")
+
+source("conversions.R")
+```
+
+# Introduction
+
+[@nyserdaNewYorkState2019]
+
+https://www.ipums.org/projects/ipums-usa. 
+
+See [Introduction].^[This is a footnote.]
+
+Reference to a Pandoc-style footnote.[^a]
+
+[^a]: A Pandoc-style footnote.
