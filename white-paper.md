@@ -2,7 +2,7 @@
 title: "What exactly is a 'white paper'?"
 author: 
 - Eric Koski, Orebed Analytics LLC
-date: "October 26, 2022[^0]"
+date: "October 27, 2022[^0]"
 output:
   bookdown::pdf_document2: 
     highlight: tango
@@ -24,7 +24,7 @@ output:
     df_print: paged
     theme: spacelab
     highlight: tango
-    css:
+    css: custom.css
     number_sections: no
     toc: no
     includes:
@@ -35,6 +35,7 @@ output:
     # https://github.com/juba/rmdformats
     number_sections: no
     toc: 2
+    css: custom.css
     highlight: tango
 mainfont: texgyrepagella-regular.otf
 mainfontoptions: "BoldFont=texgyrepagella-bold.otf,
@@ -63,7 +64,9 @@ abstract: "This is the abstract."
 
 
 
-[^0]: **Current version:** October 26, 2022; **commit:** 0b3553b8 2022-10-27
+[^0]: **Current version:** October 27, 2022; **commit:** f3b05f60 2022-10-27\
+Software herein is Copyright 2022 Orebed Analytics LLC under MIT license; see LICENSE.md.\
+Document Copyright 2022 Orebed Analytics LLC, released under Creative Commons Attribution license; see CC-BY-4.0.txt.
 
 ## Introduction {#introduction}
 

@@ -4,11 +4,6 @@ author:
 - Eric Koski, Orebed Analytics LLC
 date: "`r format(Sys.time(), '%B %d, %Y')`[^0]"
 output:
-  rmdformats::readthedown:   
-    # https://github.com/juba/rmdformats
-    number_sections: no
-    toc: 2
-    highlight: tango
   bookdown::pdf_document2: 
     highlight: tango
     latex_engine: lualatex   # xelatex or lualatex
@@ -36,6 +31,12 @@ output:
       in_header: 
       before_body: 
       after_body: 
+  rmdformats::readthedown:   
+    # https://github.com/juba/rmdformats
+    number_sections: no
+    toc: 2
+    css: custom.css
+    highlight: tango
 mainfont: texgyrepagella-regular.otf
 mainfontoptions: "BoldFont=texgyrepagella-bold.otf,
   ItalicFont=texgyrepagella-italic.otf,
@@ -73,9 +74,12 @@ source("setup.R")
 # A LaTeX way to accomplish the git-stamping which is no longer needed: 
 # \blfootnote{\textbf{Current version:} `r format(Sys.time(), '%B %d, %Y')`; 
 # \textbf{commit:} `r gitStatusBrief`}
+
+# `r format(Sys.time(), '%B %d, %Y')`; **commit:**
 ```
 
-[^0]: **Current version:** `r format(Sys.time(), '%B %d, %Y')`; **commit:** `r gitStatusBrief`
+[^0]: **Current version:** `r str_c(gitStatusBrief, "\\\n", "Software herein is Copyright ", year(Sys.time()), " Orebed Analytics LLC under MIT license; see LICENSE.md.\\\n",
+"Document Copyright ", year(Sys.time()), " Orebed Analytics LLC, released under Creative Commons Attribution license; see CC-BY-4.0.txt.")`
 
 ## Introduction {#introduction}
 

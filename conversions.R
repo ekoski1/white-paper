@@ -1,6 +1,6 @@
 # title: "conversions.Rmd"
 # author: "Eric Koski"
-# Copyright (c) 2021 Eric Koski under MIT License; see LICENSE.md. 
+# Copyright (c) 2022 Orebed Analytics LLC under MIT License; see LICENSE.md. 
 
 # Energy- and fuel-related constants and conversions
 
