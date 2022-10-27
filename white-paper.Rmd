@@ -4,17 +4,12 @@ author:
 - Eric Koski, Orebed Analytics LLC
 date: "`r format(Sys.time(), '%B %d, %Y')`[^0]"
 output:
-  bookdown::html_document2:
-    df_print: paged
-    theme: spacelab
-    highlight: tango
-    css: custom.css
+  rmdformats::readthedown:   
+    # https://github.com/juba/rmdformats
     number_sections: no
-    toc: no
-    includes:
-      in_header: 
-      before_body: 
-      after_body: 
+    toc: 2
+    css: custom.css
+    highlight: tango
   bookdown::pdf_document2: 
     highlight: tango
     latex_engine: lualatex   # xelatex or lualatex
@@ -31,12 +26,17 @@ output:
       before_body: before_body.tex
       after_body: 
     # hyperrefoptions: null # pandoc ignores these anyway; see before_body.tex
-  rmdformats::readthedown:   
-    # https://github.com/juba/rmdformats
-    number_sections: no
-    toc: 2
-    css: custom.css
+  bookdown::html_document2:
+    df_print: paged
+    theme: spacelab
     highlight: tango
+    css: custom.css
+    number_sections: no
+    toc: no
+    includes:
+      in_header: 
+      before_body: 
+      after_body: 
 mainfont: texgyrepagella-regular.otf
 mainfontoptions: "BoldFont=texgyrepagella-bold.otf,
   ItalicFont=texgyrepagella-italic.otf,
