@@ -1,0 +1,45 @@
+3ecbc3c1
+2022-10-26
+Untracked files:
+3ecbc3c1
+2022-10-26
+	Untracked:  before_body.tex
+3ecbc3c1
+2022-10-26
+	Untracked:  gitStamp.txt
+3ecbc3c1
+2022-10-26
+	Untracked:  preamble.tex
+3ecbc3c1
+2022-10-26
+	Untracked:  white-paper.bcf
+3ecbc3c1
+2022-10-26
+	Untracked:  white-paper.blg
+3ecbc3c1
+2022-10-26
+	Untracked:  white-paper.md
+3ecbc3c1
+2022-10-26
+	Untracked:  white-paper.pdf
+3ecbc3c1
+2022-10-26
+	Untracked:  white-paper.run.xml
+3ecbc3c1
+2022-10-26
+	Untracked:  white-paper.tex
+3ecbc3c1
+2022-10-26
+
+3ecbc3c1
+2022-10-26
+Unstaged changes:
+3ecbc3c1
+2022-10-26
+	Modified:   white-paper.Rmd
+3ecbc3c1
+2022-10-26
+	Modified:   white-paper.html
+3ecbc3c1
+2022-10-26
+

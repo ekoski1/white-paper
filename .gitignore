@@ -4,3 +4,6 @@
 .Ruserdata
 .Rproj
 *.Rproj
+*.bcf
+*.blg
+*.run.xml

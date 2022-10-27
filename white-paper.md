@@ -2,7 +2,7 @@
 title: "What exactly is a 'white paper'?"
 author: 
 - Eric Koski, Orebed Analytics LLC
-date: "`r format(Sys.time(), '%B %d, %Y')`[^0]"
+date: "October 26, 2022[^0]"
 output:
   bookdown::pdf_document2: 
     highlight: tango
@@ -59,29 +59,18 @@ keywords: this, that
 abstract: "This is the abstract."
 ---
 
-```{r include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, eval = TRUE)
 
-docType <- "informal report"
-```
 
-```{r setup, include=FALSE, message=FALSE}
-# setup.R contains library() calls for many useful packages and the functions 
-# to make git commit info available to annotate documents. 
-source("setup.R")
 
-# A LaTeX way to accomplish the git-stamping which is no longer needed: 
-# \blfootnote{\textbf{Current version:} `r format(Sys.time(), '%B %d, %Y')`; 
-# \textbf{commit:} `r gitStatusBrief`}
-```
 
-[^0]: **Current version:** `r format(Sys.time(), '%B %d, %Y')`; **commit:** `r gitStatusBrief`
+[^0]: **Current version:** October 26, 2022; **commit:** 3ecbc3c1 2022-10-26 UF! UC!
 
 ## Introduction {#introduction}
 
 Code chunk is included here to verify that syntax highlighting is as expected. 
 
-```{r more_setup, echo=TRUE, message=FALSE}
+
+```r
 # utils.R contains misc useful functions; conversions.R includes unit conversions 
 # and defines adjustForInflation(dollarValue, fromYear, toYear); additionally, 
 # it downloads the annual inflation index from FRED. 

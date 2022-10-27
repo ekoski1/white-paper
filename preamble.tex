@@ -1,0 +1,28 @@
+% # author: "Eric Koski"
+% # Copyright (c) 2022 Eric Koski under MIT License; see LICENSE.md. 
+
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blfootnote[1]{%
+  \begingroup%
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup}
+  
+\PassOptionsToPackage{usenames,dvipsnames,svgnames,x11names}{xcolor}
+
+\usepackage{ifxetex,ifluatex}
+\makeatletter
+\@ifpackageloaded{hyperref}
+  {}
+  {%
+  \ifxetex
+    \usepackage[setpagesize=false, % page size defined by xetex
+                unicode=false, % unicode breaks when used with xetex
+                xetex]{hyperref}
+  \else
+    \usepackage[unicode=true]{hyperref}
+  \fi
+}
+\makeatother
+
+
