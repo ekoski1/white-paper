@@ -64,7 +64,7 @@ abstract: "This is the abstract."
 
 
 
-[^0]: **Current version:** October 27, 2022; **commit:** f3b05f60 2022-10-27\
+[^0]: **Current version:** be9a5492 2022-10-27\
 Software herein is Copyright 2022 Orebed Analytics LLC under MIT license; see LICENSE.md.\
 Document Copyright 2022 Orebed Analytics LLC, released under Creative Commons Attribution license; see CC-BY-4.0.txt.
 
