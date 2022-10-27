@@ -1,3 +1,24 @@
-0b3553b8
+5d3c1b90
 2022-10-27
-working directory clean
+Untracked files:
+5d3c1b90
+2022-10-27
+	Untracked:  custom.css
+5d3c1b90
+2022-10-27
+
+5d3c1b90
+2022-10-27
+Unstaged changes:
+5d3c1b90
+2022-10-27
+	Modified:   gitStamp.txt
+5d3c1b90
+2022-10-27
+	Modified:   white-paper.Rmd
+5d3c1b90
+2022-10-27
+	Modified:   white-paper.html
+5d3c1b90
+2022-10-27
+

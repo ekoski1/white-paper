@@ -4,6 +4,11 @@ author:
 - Eric Koski, Orebed Analytics LLC
 date: "`r format(Sys.time(), '%B %d, %Y')`[^0]"
 output:
+  rmdformats::readthedown:   
+    # https://github.com/juba/rmdformats
+    number_sections: no
+    toc: 2
+    highlight: tango
   bookdown::pdf_document2: 
     highlight: tango
     latex_engine: lualatex   # xelatex or lualatex
@@ -24,18 +29,13 @@ output:
     df_print: paged
     theme: spacelab
     highlight: tango
-    css:
+    css: custom.css
     number_sections: no
     toc: no
     includes:
       in_header: 
       before_body: 
       after_body: 
-  rmdformats::readthedown:   
-    # https://github.com/juba/rmdformats
-    number_sections: no
-    toc: 2
-    highlight: tango
 mainfont: texgyrepagella-regular.otf
 mainfontoptions: "BoldFont=texgyrepagella-bold.otf,
   ItalicFont=texgyrepagella-italic.otf,
